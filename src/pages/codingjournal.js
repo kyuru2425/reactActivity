@@ -107,6 +107,16 @@ const Codingjournal = () => {
             
         })
     }
+    let clearAll=()=>{
+        
+        // localStorage.removeItem("contactRecord");
+        setRecord([]);
+    }
+    let clearAll2=()=>{
+        
+        // localStorage.removeItem("contactRecord");
+        setRecord2([]);
+    }
 
   return (
     <div>
@@ -126,6 +136,7 @@ const Codingjournal = () => {
             
       </form>
       <JournalTable data={record} clearCell={clearCell} updateCell={updateCell}/>
+      <button type='button' onClick={clearAll}>Remove All Records</button>
       <br></br>
       <form onSubmit={submitTask}>
             <label>Task</label>
@@ -143,6 +154,7 @@ const Codingjournal = () => {
             
       </form>
       <TasksTable data={record2} clearCell={clearCell} updateCell={updateCell2}/>
+      <button type='button' onClick={clearAll2}>Remove All Records</button>
     </div>
   )
 }
