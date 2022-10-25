@@ -125,7 +125,7 @@ const Codingjournal = () => {
             <label>Thoughts for the Day</label>
             <div>
                 <label for="">Date: </label>
-                <input type='date'name='date' ref={dateRef}></input>
+                <input type='date'name='date' ref={dateRef} min="2022-10-25"></input>
             </div>
             <br/>
             <div>
@@ -143,7 +143,7 @@ const Codingjournal = () => {
             <label>Task</label>
             <div>
                 <label for="">Date: </label>
-                <input type="date" required tabIndex={1} ref={date2Ref}></input>
+                <input type="date" required tabIndex={1} ref={date2Ref} min="2022-10-25"></input>
             </div>
             <br/>
             <div>
