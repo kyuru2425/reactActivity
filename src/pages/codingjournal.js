@@ -56,6 +56,7 @@ const Codingjournal = () => {
     }
     let updateCell = (e)=>{
         let num = parseInt(e.target.id);
+        
         let update = [...record].filter(item=>{
             return item.id===num;
         }).map(item=>{

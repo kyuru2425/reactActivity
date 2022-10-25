@@ -14,7 +14,7 @@ const TasksTable = ({data, clearCell, updateCell}) => {
                 <tr>
                     <td>
                         Date: {prop.date}
-                        <p>{prop.thoughts}</p>
+                        <p>{prop.tasks}</p>
                         
                     </td>
                     <td>
